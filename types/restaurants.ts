@@ -4,6 +4,8 @@ export type restaurant = {
   phone: string;
   open: string;
   close: string;
+  verified: boolean;
+  certificate: string;
   category: string[];
   menus: menus[];
 };

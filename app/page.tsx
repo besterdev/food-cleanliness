@@ -24,13 +24,14 @@ export default function Home() {
   };
 
   return (
-    <main className="xs:p-10 flex min-h-screen flex-col items-center p-10 xl:p-24">
+    <main className="xs:p-10 flex min-h-screen flex-col items-center p-6 xl:p-24">
       <Image
         src={"/images/logo.png"}
         alt="logo"
         width={200}
         height={200}
-        className="mb-10"
+        className="mb-10 xl:h-auto xl:w-auto"
+        priority={true}
       />
       <SearchInput
         setSearch={(e) => setSearch(e.target.value)}
