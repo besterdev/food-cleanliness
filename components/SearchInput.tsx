@@ -1,28 +1,20 @@
-import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Search } from "lucide-react";
 
 interface SearchInputProps {
   setSearch: (event: React.ChangeEvent<HTMLInputElement>) => void;
-  onSearch: () => void;
 }
 
-const SearchInput = ({ setSearch, onSearch }: SearchInputProps) => {
+const SearchInput = ({ setSearch }: SearchInputProps) => {
   return (
-    <div className="flex w-full max-w-md items-center space-x-2">
+    <div className="relative flex w-full max-w-md items-center space-x-2">
       <Input
-        className="w-full border-2 border-primary ring-primary placeholder:text-foreground/50"
+        className="w-full border-2 border-primary/50 placeholder:text-foreground/50 focus-visible:ring-primary"
         type="text"
-        placeholder="ค้นหาร้านอาหารการันตีจากพีว่าดีย์"
+        placeholder="Search for a restaurant"
         onChange={setSearch}
       />
-      <Button
-        type="submit"
-        variant="default"
-        className="font-bold"
-        onClick={onSearch}
-      >
-        จิ้มโลด
-      </Button>
+      <Search className="absolute right-5 h-4 w-4 text-primary" />
     </div>
   );
 };
