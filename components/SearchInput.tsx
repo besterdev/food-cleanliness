@@ -9,7 +9,7 @@ const SearchInput = ({ setSearch }: SearchInputProps) => {
   return (
     <div className="relative flex w-full max-w-md items-center space-x-2">
       <Input
-        className="w-full border-2 border-primary/50 placeholder:text-foreground/50 focus-visible:ring-primary"
+        className="h-12 w-full border-2 border-primary/50 text-lg placeholder:text-foreground/50 focus-visible:ring-primary"
         type="text"
         placeholder="Search for a restaurant"
         onChange={setSearch}
