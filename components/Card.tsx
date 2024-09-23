@@ -21,13 +21,8 @@ interface CardProps {
 }
 
 const Card = ({ restaurant }: CardProps) => {
-  const url =
-    "http://www.google.com/maps/place/" +
-    restaurant.location?.lat +
-    "," +
-    restaurant.location?.lng;
-
   const openGoogleMap = () => {
+    const url = `http://www.google.com/maps/place/${restaurant.location?.lat},${restaurant.location?.lng}`;
     window.open(url, "_blank");
   };
 
