@@ -4,6 +4,7 @@ export type restaurant = {
   phone: string;
   open: string;
   close: string;
+  location: location;
   verified: boolean;
   certificate: string;
   category: string[];
@@ -14,4 +15,9 @@ type menus = {
   name: string;
   description: string;
   images: string[];
+};
+
+type location = {
+  lat: number;
+  lng: number;
 };

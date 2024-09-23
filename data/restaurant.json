@@ -7,6 +7,10 @@
       "phone": "022133007",
       "open": "10:00",
       "close": "22:00",
+      "location": {
+        "lat": 13.709209583393257,
+        "lng": 100.51420752869392
+      },
       "verified": true,
       "certificate": "/images/certificate/mr-joe.jpeg",
       "category": ["อาหารจีน", "อาหารเช้า"],
@@ -46,6 +50,10 @@
       "phone": "0816828816",
       "open": "18:00",
       "close": "23:59",
+      "location": {
+        "lat": 13.7425142555199,
+        "lng": 100.5225279582742
+      },
       "verified": true,
       "certificate": "/images/certificate/jehochual.jpeg",
       "category": ["อาหารจีน", "อาหารเช้า"],
@@ -80,6 +88,10 @@
       "phone": "0816828816",
       "open": "18:00",
       "close": "23:59",
+      "location": {
+        "lat": 13.734579320124242,
+        "lng": 100.56625532459309
+      },
       "verified": true,
       "certificate": "/images/certificate/isao.jpeg",
       "category": ["อาหารญี่ปุ่น", "ชูชิ"],
